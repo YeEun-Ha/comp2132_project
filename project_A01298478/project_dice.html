@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yenni Ha</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rubik:wght@300&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <!-- css, js -->
+    <link rel="stylesheet" href="./css/mystyle.css">
+    <script src="./script/script.js" defer="defer"></script>
+</head>
+<body>
+        <section id="gameBackground">     
+            <article id="wonPopUp">
+                <h2>You Won!</h2>
+                <button id="winNoPopUp">❌</button>
+                <p><img id="winnerImage" src="./images/heart1.jpg" alt=""></p>
+                <p>Lucky you!!</p>
+            </article>
+            <article id="lostPopUp">
+                <h2>You Lost!</h2>
+                <button id="loseNoPopUp">❌</button>
+                <p><img id="loserImage" src="./images/b1.jpg" alt=""></p>
+                <p>Tough luck!</p>
+            </article>
+            <article id="drewPopUp">
+                <h2>Drew!</h2>
+                <button id="drawNoPopUp">❌</button>
+                <p><img src="" alt=""></p>
+                <p>Let's call it a tie!</p>
+            </article>
+
+            <div id="gamePanel">
+                <h1>Dice Game </h1>
+
+                <div class="boxes">
+                    <h2>Your dice</h2>
+                    <div id="usersDice"> </div>
+                    <table>
+                        <tr>
+                            <th>Current Score</th>
+                            <th>Total Score</th>
+                        </tr>
+                        <tr>
+                            <td id="user_current">0</td>
+                            <td id="user_total">0</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="boxes">
+                    <h2>Computer's dice</h2>
+                    <div id="computersDice"> </div>
+                    <table>
+                        <tr>
+                            <th>Current Score</th>
+                            <th>Total Score</th>
+                        </tr>
+                        <tr>
+                            <td id="computer_current">0</td>
+                            <td id="computer_total">0</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="buttons_rules_container">
+                    <button id="resetGame">Reset Game</button>
+                    <button id="rollDice">Roll Dice</button>
+                    <span>❓</span>
+                    <div id="howToPlay">
+                        <p>🔅 How to Play</p>
+                        <ol>
+                            <li>To play, click 'Roll Dice'. After 3 times, game is over and will restart.</li>
+                            <li>To restart at any time, click 'Reset Game' or refresh.</li>
+                        </ol>
+                    </div>
+                    <div id="rules_container">
+                        <p>🔅Rules</p> 
+                        <span>Hide</span>
+                        <ol>
+                            <li>If you roll doubles (e.g., a 4 and a 4) then your score is multiplied by 2.</li>
+                            <li>Rolling a 1 will give you a score of 0 for that round.</li>
+                            <li>Other than the two mentioned above the score is the total value of the two dice.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <span id="bottom">This</span> page was last edited on 29 Nov 2023 (UTC).
+        <br>
+        Thank you for reading!
+    </footer>
+    
+</body>
+</html>

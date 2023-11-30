@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    background-color: gainsboro;
+}
+::selection {
+    color: white;
+    background-color: chocolate;
+}
+::marker {
+    color: brown;
+    font-family: 'Indie Flower', cursive;
+    font-size: x-large;
+}
+footer {
+    text-align: center;
+    background-color: slategray;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+h1, h2, h3 {
+    color: brown;
+    font-family:'Shadows Into Light', cursive;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: xx-large;
+}
+h1 {
+    font-size: 50px;
+    text-shadow:  0 0 20px darkkhaki, 0 0 5px darkblue, 1px 1px 1px black;
+}
+
+table, td, th {
+    border: solid thin darkred;
+    border-collapse: collapse;
+    padding: 5px;
+}
+table {
+    margin: auto;
+}
+
+article{
+    background-color: rgb(1, 1, 65);
+    color: gainsboro;
+    border-radius: 10px;
+    border: solid goldenrod;
+    box-shadow: 0px 0px 10px darkslateblue;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 100;
+}
+article h2{
+    color: gainsboro;
+}
+article button{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    cursor:pointer;
+}
+#winnerImage, #loserImage {
+    width: 20%;
+}
+
+section {
+    height: 1500px;
+    background: url(../images/backgroundCasino.jpg) center no-repeat;
+    background-size: cover;
+}
+#gamePanel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width: 65%;
+    border-radius: 10px;
+    background-color:rgba(112, 128, 144, 0.8) ;
+    text-align: center;
+    z-index: 10;
+}
+.boxes {
+    border: double thick rosybrown;
+    border-radius: 10px;
+    background-color:darkkhaki;
+    padding: 50px 0px;
+    margin: 2%;
+    margin-bottom: 5%;
+    width: 35%;
+    position: relative;
+    left: 10%;
+    float: left;
+}
+.boxes span {
+    display: inline-block;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.dice {
+    border-radius: 15px;
+    width: 50px;
+    box-shadow: 0px 0px 5px black;
+    margin-left: 5px;
+    margin-bottom: 30px;
+
+    transition: 0.5s transform;
+}
+#buttons_rules_container {
+    clear: both;
+}
+#buttons_rules_container button{
+    padding: 10px;
+    border-radius: 10px;
+    border: solid thin darkgoldenrod ;
+    box-shadow: 1px 1px 3px darkslateblue;
+    background-color:gainsboro;
+    color:brown;
+    cursor:pointer;
+}
+#buttons_rules_container span{
+    padding: 3px;
+    border-radius: 5px;
+    border: solid thin darkgoldenrod ;
+    box-shadow: 1px 1px 3px darkslateblue;
+    background-color:gainsboro;
+    cursor:pointer;
+}
+#buttons_rules_container span:hover ~ #howToPlay{
+    display: block;
+}
+
+#rules_container {
+    text-align: left;
+    position: relative;
+    background-color: rgba(220, 220, 220, 0.5);
+    padding: 0px 5px;
+}
+#rules_container span{
+    position: absolute;
+    top:0;
+    right: 5%;
+    color: darkred;
+}
+#howToPlay {
+    display: none;
+    text-align: left;
+    position: absolute;
+    right: 15%;
+    box-shadow: 1px 1px 3px darkslateblue;
+    border-radius: 10px;
+    padding: 5px;
+
+    background-color: gainsboro;
+    z-index: 1000;
+}
+.hide {
+    display: none;
+}
+
+@media screen and ( max-width: 850px) {
+    .boxes {
+        float: none;
+        margin: 0%;
+        margin-bottom: 5%;
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+}
